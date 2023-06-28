@@ -255,11 +255,11 @@ jQuery(function ($) {
 		
 		// Screenshot Slider
 		$('.screenshot-slider').owlCarousel({
-			loop: true,
+			// loop: true,
 			nav: false,
 			dots: true,
-			autoplayHoverPause: true,
-			autoplay: true,
+			// autoplayHoverPause: true,
+			// autoplay: true,
             smartSpeed: 1000,
             margin: 30,
             navText: [
