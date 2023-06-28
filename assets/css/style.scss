@@ -1332,6 +1332,7 @@ Blog Area CSS
     transition: var(--transition);
     .post-content {
         padding: 25px;
+        min-height: 352px;
         .post-meta {
             list-style-type: none;
             padding-left: 0;
@@ -4766,8 +4767,4 @@ Sidebar Eaxmple Demo CSS
         opacity: 1;
         visibility: visible;
     }
-}
-
-.owl-carousel .owl-item {
-    min-height: 550px;
 }

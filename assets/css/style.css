@@ -1207,6 +1207,7 @@ Blog Area CSS
 }
 .single-blog-post .post-content {
   padding: 25px;
+  min-height: 352px;
 }
 .single-blog-post .post-content .post-meta {
   list-style-type: none;
@@ -4282,8 +4283,4 @@ Sidebar Eaxmple Demo CSS
   right: 0;
   opacity: 1;
   visibility: visible;
-}
-
-.owl-carousel .owl-item {
-  min-height: 550px;
 }/*# sourceMappingURL=style.css.map */
