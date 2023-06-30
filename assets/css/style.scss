@@ -4146,10 +4146,10 @@ Specification Area CSS
 Users Area CSS
 =================================================*/
 .users-area {
-    background-image: url(../../assets/img/users-bg.jpg);
+    background-image: url(../../assets/img/vk-bg.jpg);
     background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat-x;
     position: relative;
     z-index: 1;
     background-attachment: fixed;
@@ -4168,7 +4168,7 @@ Users Area CSS
     }
 }
 .users-content {
-    max-width: 650px;
+   // max-width: 650px;
     h3 {
         font-size: 50px;
         color: var(--whiteColor);
