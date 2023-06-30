@@ -3704,7 +3704,7 @@ Users Area CSS
 .users-area {
   background-image: url(../../assets/img/vk-bg.jpg);
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: repeat-x;
   position: relative;
   z-index: 1;
