@@ -61,7 +61,7 @@ Default CSS
   --whiteColor: #ffffff;
   --blackColor: #031521;
   --blueColor: #6c8cc7;
-  --fontSize: 16px;
+  --fontSize: 18px;
   --transition: .5s;
 }
 
@@ -382,7 +382,7 @@ Book Banner Area CSS
 .book-banner-area {
   position: relative;
   z-index: 1;
-  height: 750px;
+  height: 100vh;
   background-image: url(../../assets/img/main-bg.svg);
   background-position: center center;
   background-size: cover;
@@ -821,6 +821,10 @@ Reviews Area CSS
 =================================================*/
 .reviews-area {
   background-color: #fafafa;
+  background-image: url(../../assets/img/main-bg2.svg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .reviews-area.bg-ffffff {
   background-color: var(--whiteColor);
@@ -911,18 +915,16 @@ Reviews Area CSS
   border-radius: 50%;
   outline: 0 !important;
   transition: var(--transition);
-  opacity: 0;
-  font-size: 25px;
-  visibility: hidden;
+  font-size: 45px;
 }
 .reviews-slides .next-arrow:hover, .reviews-slides .prev-arrow:hover {
   color: var(--mainColor);
 }
 .reviews-slides .next-arrow {
-  right: -20px;
+  right: -65px;
 }
 .reviews-slides .prev-arrow {
-  left: -20px;
+  left: -65px;
 }
 .reviews-slides:hover .next-arrow, .reviews-slides:hover .prev-arrow {
   opacity: 1;
@@ -1207,7 +1209,7 @@ Blog Area CSS
 }
 .single-blog-post .post-content {
   padding: 25px;
-  min-height: 352px;
+  min-height: 250px;
 }
 .single-blog-post .post-content .post-meta {
   list-style-type: none;

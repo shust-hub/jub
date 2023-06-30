@@ -382,4 +382,6 @@ jQuery(function ($) {
 			$('.example-demo-modal').removeClass('active');
 		});
 
+		new WOW().init();
+
 }(jQuery));
