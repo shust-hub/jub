@@ -693,6 +693,7 @@ About Area CSS
   background-color: var(--whiteColor);
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.2);
   padding: 45px;
+  z-index: 2;
 }
 
 .app-about-image {
@@ -1044,7 +1045,7 @@ Fun Facts Area CSS
   line-height: initial;
   margin: 0 0 0 0;
   transition: var(--transition);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 500;
 }
 .single-fun-fact::before {
