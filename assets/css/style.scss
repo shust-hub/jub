@@ -197,14 +197,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section-title {
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto 45px;
     h2 {
-        font-size: 45px;
+        font-size: 55px;
         margin-bottom: 14px;
     }
     h3 {
-        font-size: 21px;
+        font-size: 28px;
         margin-bottom: 14px;
         text-transform: none;
         line-height: 1.6;
@@ -446,7 +446,7 @@ Book Banner Area CSS
     position: relative;
     z-index: 1;
     span {
-        font-size: 18px;
+        font-size: 24px;
         color: var(--whiteColor);
         font-weight: 500;
     }
@@ -765,12 +765,12 @@ About Area CSS
     .container {
         background-color: var(--whiteColor);
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.2);
-        padding: 45px;
-        z-index: 2;
+        padding: 45px 75px;
+        z-index: 3;
     }
 }
 .app-about-image {
-    text-align: right;
+    text-align: left;
 }
 .saas-about-content {
     h3 {
@@ -1331,9 +1331,10 @@ Author Area CSS
 .author-content {
     padding: 30px;
     h3 {
-        font-size: 35px;
+        font-size: 28px;
         margin-bottom: 20px;
     }
+
     .social-icon {
         padding-left: 0;
         margin-top: 25px;
