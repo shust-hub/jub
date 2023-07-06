@@ -528,14 +528,15 @@ Book Area CSS
 About Area CSS
 =================================================*/
 .book-about-image {
-  background-image: url(../../assets/img/book-about.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
+}
+.book-about-image img {
+  width: 100%;
+  position: sticky;
+  top: 10px;
 }
 
 .book-about-content {
@@ -562,15 +563,31 @@ About Area CSS
 .book-about-content .book-list li {
   list-style-type: none;
   margin-bottom: 12px;
-  text-transform: capitalize;
+  padding-left: 35px;
+  position: relative;
+  font-weight: 500;
 }
 .book-about-content .book-list li:last-child {
   margin-bottom: 0;
 }
-.book-about-content .book-list li i {
-  font-size: 20px;
-  color: var(--mainColor);
-  margin-right: 5px;
+.book-about-content .book-list li span {
+  display: block;
+  font-size: smaller;
+  font-style: italic;
+  margin-top: 5px;
+  font-weight: 400;
+}
+.book-about-content .book-list li:before {
+  content: "\f1d8";
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  color: #f68221;
+  font-size: 25px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  text-align: center;
+  margin: auto;
 }
 
 .products-about-content span {
