@@ -393,7 +393,7 @@ jQuery(function ($) {
 			navigator.clipboard.writeText(cpnCode.innerHTML);
 			cpnBtn.innerHTML ="Скопировано";
 			setTimeout(function(){
-				cpnBtn.innerHTML="Скопировать код";
+				cpnBtn.innerHTML="Копировать";
 			}, 3000);
 		}
 
