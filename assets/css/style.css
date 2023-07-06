@@ -61,7 +61,7 @@ Default CSS
   --whiteColor: #ffffff;
   --blackColor: #031521;
   --blueColor: #6c8cc7;
-  --fontSize: 18px;
+  --fontSize: 21px;
   --transition: .5s;
 }
 
@@ -71,6 +71,7 @@ body {
   color: var(--optionalColor);
   font-family: var(--mainfontFamily);
   font-size: var(--fontSize);
+  overflow-x: hidden;
 }
 
 a {
@@ -133,6 +134,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 70px;
 }
 
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1300px;
+  }
+}
 .default-btn {
   border: none;
   position: relative;
