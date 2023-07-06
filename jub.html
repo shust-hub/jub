@@ -212,6 +212,9 @@
                 <div class="col-lg-8">
                     <div class="author-content">
                         <h4 class="mb-3">2021 год</h4>
+                        <p>
+                            Журнал стал онлайн-порталом, и теперь есть возможность скачать необходимую статью, прослушать аудио и в целом быть в курсе актуальных новостей
+                        </p>
                         <p>На пресс-конференции, проведенной для представителей прессы, была презентована новая — электронная — версия журнала. Газета «Санкт-Петербургские ведомости» посвятила этой презентации статью «Истина рождается в спорах»</p>
                     </div>
                 </div>
@@ -425,24 +428,128 @@
         <!-- End Reviews Area -->
 
         <!-- Start Contact Area -->
-        <section id="contact" class="contact-area pt-100">
-            <div class="container wow fadeInUp py-5" style="background-color: #fafafa;     background-image: url(assets/img/arbitrazhnye-spory.png);
-            background-position: center center;
-            background-size: cover;">
+        <!-- <section id="contact" class="contact-area pt-100">
+            <div class="container wow fadeInUp py-5" style="background-color: #fafafa; ">
                 <div class="px-4" >
-                    <h2 class="text-left">Получите ещё 2 номера в подарок</h2>
-                    <p class="text-left">При оформлении годовой подписки до 30 июля по промокоду</p>
-                    <h2 class="text-left mt-4" style="color: #f68221;">25ЛЕТ</h2>
+                    <h2 class="text-center">+ 2 НОМЕРА В ПОДАРОК</h2>
+                    <p class="text-center">по промокоду</p>
+                    <h2 class="text-center my-2" style="color: #f68221;">25ЛЕТ</h2>
+                    <p class="text-center">при оформлении годовой подписки до 30 июля</p>
                 </div>
             </div>
-        </section>
+        </section>  -->
         <!-- End Contact Area -->
+
+
+        <style>
+            .coupon-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .coupon-card{
+            background: linear-gradient(135deg, #6c8cc7, #b4c4e2);
+            color: #fff;
+            text-align: center;
+            padding: 40px 80px;
+            border-radius: 15px;
+            box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+            position: relative;
+
+            }
+            .logo{
+            width: 80px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+
+            }
+            .coupon-card h3{
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 40px;
+
+            }
+            .coupon-card p{
+            font-size: 15px;
+
+            }
+            .coupon-row{
+            display: flex;
+            align-items: center;
+            margin: 25px auto;
+            width: fit-content;
+
+            }
+            #cpnCode{
+            border: 1px dashed #fff;
+            padding: 10px 20px;
+            border-right: 0;
+
+            }
+            #cpnBtn{
+            border: 1px solid #fff;
+            background: #fff;
+            padding: 10px 20px;
+            color: #6c8cc7;
+            cursor: pointer;
+            }
+            .circle1, .circle2{
+            background: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            }
+            .circle1{
+            left: -25px;
+            }
+            .circle2{
+            right: -25px;
+            }
+
+        </style>
+
+        <!-- Start Contact Area -->
+        <section id="contact" class="contact-area pt-100" >
+            <div class="container coupon-container">
+                <div class="coupon-card  wow swing">
+                    <img src="assets/img/gift.png" class="logo">
+                    <h3>+ 2 НОМЕРА В ПОДАРОК <br> при оформлении годовой подписки по промокоду</h3>
+                    <di class="coupon-row">
+                        <span id="cpnCode">25ЛЕТ</span>
+                        <span id="cpnBtn">Скопировать код</span>
+                    </di>
+                    <p>до 30 июля  2023 года</p>
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                </div>
+            </div>
+        </section> 
+        <!-- End Contact Area -->
+
+        <script>
+             var cpnBtn = document.getElementById("cpnBtn");
+            var cpnCode = document.getElementById("cpnCode");
+
+            cpnBtn.onclick = function(){
+                navigator.clipboard.writeText(cpnCode.innerHTML);
+                cpnBtn.innerHTML ="Скопировано";
+                setTimeout(function(){
+                    cpnBtn.innerHTML="Скопировать код";
+                }, 3000);
+            }
+        </script>
+                
+        
 
         <!-- Start Contact Area -->
         <section id="contact" class="contact-area ptb-100">
             <div class="container" >
                 <div class="section-title">
-                    <h2>Напишите нам</h2>
+                    <h2>Будем рады Вашим поздравлениям!</h2>
                     <p>За 25 лет существования у нас появились свои традиции, мы заслужили уважение и признание читателей и стали полноценной платформой для обмена опытом, научных дискуссий, обсуждения актуальных вопросов и отображения позиций экспертов по поднимаемым на страницах журнала вопросам. Мы всегда прислушиваемся к читательской критике, однако сегодня мы гораздо охотнее ждем поздравлений.</p>
                 </div>
 
