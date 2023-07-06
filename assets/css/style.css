@@ -671,6 +671,18 @@ About Area CSS
   z-index: -2;
 }
 
+.scroll-image {
+  background-image: url(../../assets/img/map.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  width: 900px;
+  height: 600px;
+  z-index: -1;
+}
+
 .app-about-area .container {
   background-color: var(--whiteColor);
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.2);

@@ -475,6 +475,7 @@ Book Banner Area CSS
     }
 }
 
+
 /*================================================
 Book Area CSS
 =================================================*/
@@ -739,6 +740,18 @@ About Area CSS
     position: relative;
     overflow: hidden;
     z-index: -2;
+}
+
+.scroll-image {
+    background-image: url(../../assets/img/map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    width: 900px;
+    height: 600px;
+    z-index: -1;
 }
 
 

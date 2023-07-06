@@ -398,7 +398,7 @@ jQuery(function ($) {
 		}
 
 5
-		let bg = document.querySelector('.main-image');
+		let bg = document.querySelector('.scroll-image');
 		window.addEventListener('mousemove', function(e) {
 			let x = e.clientX / window.innerWidth;
 			let y = e.clientY / window.innerHeight;  
