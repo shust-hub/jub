@@ -35,6 +35,16 @@ Responsive CSS
   .navbar-light .others-option .option-item .social-icon {
     margin-top: 20px;
   }
+  .scroll-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    z-index: -1;
+  }
   .book-banner-area {
     height: 100%;
     padding-top: 50px;
@@ -235,12 +245,6 @@ Responsive CSS
   .overview-content h3 {
     font-size: 24px;
   }
-  :nth-child(3) .overview-content {
-    margin-bottom: 0;
-  }
-  :nth-child(3) .overview-left-img {
-    margin-bottom: 30px;
-  }
   .page-title-area {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -354,7 +358,6 @@ Responsive CSS
     width: 280px;
   }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ptb-100 {
     padding-top: 70px;
@@ -610,7 +613,6 @@ Responsive CSS
     text-align: center;
   }
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-banner-content h1 {
     font-size: 60px;
@@ -633,5 +635,4 @@ Responsive CSS
   .single-saas-features h3 {
     font-size: 22px;
   }
-}
-/*# sourceMappingURL=responsive.css.map */
+}/*# sourceMappingURL=responsive.css.map */

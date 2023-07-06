@@ -45,6 +45,18 @@ Responsive CSS
             }
         }
     }
+
+    .scroll-image {
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 500px;
+        z-index: -1;
+    }
+
     .book-banner-area {
         height: 100%;
         padding-top: 50px;
@@ -305,14 +317,14 @@ Responsive CSS
             font-size: 24px;
         }
     }
-    &:nth-child(3) {
-        .overview-content {
-            margin-bottom: 0;
-        }
-        .overview-left-img {
-            margin-bottom: 30px;
-        }
-    }
+    // &:nth-child(3) {
+    //     .overview-content {
+    //         margin-bottom: 0;
+    //     }
+    //     .overview-left-img {
+    //         margin-bottom: 30px;
+    //     }
+    // }
 
     .page-title-area {
         padding-top: 50px;
