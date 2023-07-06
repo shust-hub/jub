@@ -382,6 +382,29 @@ jQuery(function ($) {
 			$('.example-demo-modal').removeClass('active');
 		});
 
+		// Анимация блоков
 		new WOW().init();
+
+		// Копирование промокода
+		var cpnBtn = document.getElementById("cpnBtn");
+		var cpnCode = document.getElementById("cpnCode");
+
+		cpnBtn.onclick = function(){
+			navigator.clipboard.writeText(cpnCode.innerHTML);
+			cpnBtn.innerHTML ="Скопировано";
+			setTimeout(function(){
+				cpnBtn.innerHTML="Скопировать код";
+			}, 3000);
+		}
+
+5
+		let bg = document.querySelector('.main-image');
+		window.addEventListener('mousemove', function(e) {
+			let x = e.clientX / window.innerWidth;
+			let y = e.clientY / window.innerHeight;  
+			bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+		});
+
+
 
 }(jQuery));

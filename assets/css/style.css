@@ -382,10 +382,6 @@ Book Banner Area CSS
   position: relative;
   z-index: 1;
   height: 100vh;
-  background-image: url(../../assets/img/main-bg.svg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .book-banner-area .main-banner-content p {
   color: var(--blackColor);
@@ -646,12 +642,16 @@ About Area CSS
   margin-top: 25px;
 }
 
-.app-about-area {
-  background-color: var(--blueColor);
-  background-image: url(../../assets/img/about-bg.svg);
+#start {
+  background: rgb(83, 110, 165);
+  background-image: url(../../assets/img/main-bg.svg), linear-gradient(180deg, rgb(83, 110, 165) 0%, rgb(108, 140, 199) 50%, rgb(128, 160, 221) 100%);
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
 }
 
 .app-about-area .container {
