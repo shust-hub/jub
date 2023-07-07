@@ -417,19 +417,7 @@ Book Banner Area CSS
     position: relative;
     z-index: 1;
     height: 100vh;
-
-    // &::before {
-    //     position: absolute;
-    //     content: "";
-    //     height: 100%;
-    //     width: 100%;
-    //     background-color: #f3f3f3;
-    //     left: 0;
-    //     right: 0;
-    //     top: 0;
-    //     opacity: 0.9;
-    //     z-index: -1;
-    // }
+    overflow-x: hidden;
 
     .banner-image-25{
         img{
@@ -4856,6 +4844,8 @@ Coupon CSS
     border-radius: 15px;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
     position: relative;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .logo{
     width: 80px;
