@@ -385,7 +385,21 @@ jQuery(function ($) {
 		// Анимация блоков
 		new WOW().init();
 
-		
+
+
+		// function myFunction(x) {
+		// 	if (x.matches) { // If media query matches
+		// 	  document.body.style.backgroundColor = "yellow";
+		// 	} else {
+		// 	  document.body.style.backgroundColor = "pink";
+		// 	}
+		//   }
+		  
+		//   var x = window.matchMedia("(max-width: 700px)")
+		//   myFunction(x) // Call listener function at run time
+		//   x.addListener(myFunction) // Attach listener function on state chang
+
+
 		// Копирование промокода
 		var cpnBtn = document.getElementById("cpnBtn");
 		var cpnCode = document.getElementById("cpnCode");
@@ -405,7 +419,6 @@ jQuery(function ($) {
 			let y = e.clientY / window.innerHeight;  
 			bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
 		});
-
 
 
 }(jQuery));

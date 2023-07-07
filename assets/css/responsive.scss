@@ -62,6 +62,8 @@ Responsive CSS
         background-repeat: no-repeat;
         background-size: contain;
         position: absolute;
+        left:50%;
+        transform: translate(-50%, 0);
         top: 0;
         width: 90%;
         margin: 0 auto;
@@ -327,14 +329,6 @@ Responsive CSS
             font-size: 24px;
         }
     }
-    // &:nth-child(3) {
-    //     .overview-content {
-    //         margin-bottom: 0;
-    //     }
-    //     .overview-left-img {
-    //         margin-bottom: 30px;
-    //     }
-    // }
 
     .page-title-area {
         padding-top: 50px;
@@ -515,6 +509,23 @@ Responsive CSS
         box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
         max-width: 700px;
         margin: 0 auto;
+    }
+    .wowLg {
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
     }
 }
 
