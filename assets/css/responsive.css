@@ -51,8 +51,6 @@ Responsive CSS
     background-size: contain;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
     width: 90%;
     margin: 0 auto;
     z-index: -1;

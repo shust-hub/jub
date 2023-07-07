@@ -385,13 +385,7 @@ jQuery(function ($) {
 		// Анимация блоков
 		new WOW().init();
 
-		if(isMobile || isTablet) {
-			$('.coupon-card').removeClass('wow');
-		} else {
-			$('.coupon-card').addClass('wow');
-		}
-
-
+		
 		// Копирование промокода
 		var cpnBtn = document.getElementById("cpnBtn");
 		var cpnCode = document.getElementById("cpnCode");
