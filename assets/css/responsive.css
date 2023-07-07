@@ -41,8 +41,16 @@ Responsive CSS
     position: absolute;
     top: 0;
     left: 0;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    z-index: -2;
+  }
+  .map-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: -1;
   }
   .book-banner-area {
