@@ -1,0 +1,36 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 720 809.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: url(#Безымянный_градиент_2);
+      }
+
+      .cls-4 {
+        fill: url(#Безымянный_градиент_3);
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(-521 -99)">
+      <rect class="cls-1" x="521" y="99" width="720" height="809"/>
+    </clipPath>
+    <linearGradient id="Безымянный_градиент_2" data-name="Безымянный градиент 2" x1="1250.5" y1="881.05" x2="1006.86" y2="442.25" gradientTransform="matrix(1, 0, 0, -1, 0, 963.89)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.19" stop-color="#7190c7"/>
+      <stop offset="1" stop-color="#425b8f"/>
+    </linearGradient>
+    <linearGradient id="Безымянный_градиент_3" data-name="Безымянный градиент 3" x1="481.66" y1="11.27" x2="832.1" y2="595.01" xlink:href="#Безымянный_градиент_2"/>
+  </defs>
+  <title>круг</title>
+  <g class="cls-2">
+    <g>
+      <path class="cls-3" d="M936.11,152.63,1029,213.31l-84.13,54.14c106.1,27.7,184.34,123.43,184.34,237.27,0,127.53-98.19,232.32-223.71,244.22V681.12L730.54,793.71,905.48,908V860.09C1092.83,847.92,1241,693.49,1241,504.74c0-178.35-132.28-326.08-304.89-352.1Z" transform="translate(-521 -99)"/>
+      <path class="cls-4" d="M730.54,793.7l82.2-52.9C708.88,711.63,632.81,617,632.81,504.71c0-126.68,96.89-230.94,221.23-244v65.15L1029,213.3,854,99v50.51c-186.17,13.36-333,167.27-333,355.2S654.07,831.66,827.46,857Z" transform="translate(-521 -99)"/>
+    </g>
+  </g>
+</svg>

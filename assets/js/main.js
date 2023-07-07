@@ -385,6 +385,13 @@ jQuery(function ($) {
 		// Анимация блоков
 		new WOW().init();
 
+		if(isMobile || isTablet) {
+			$('.coupon-card').removeClass('wow');
+		} else {
+			$('.coupon-card').addClass('wow');
+		}
+
+
 		// Копирование промокода
 		var cpnBtn = document.getElementById("cpnBtn");
 		var cpnCode = document.getElementById("cpnCode");
@@ -398,7 +405,7 @@ jQuery(function ($) {
 		}
 
 5
-		let bg = document.querySelector('.scroll-image');
+		let bg = document.querySelector('.map-image');
 		window.addEventListener('mousemove', function(e) {
 			let x = e.clientX / window.innerWidth;
 			let y = e.clientY / window.innerHeight;  

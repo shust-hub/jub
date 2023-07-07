@@ -431,6 +431,14 @@ Book Banner Area CSS
     //     z-index: -1;
     // }
 
+    .banner-image-25{
+        img{
+            max-width: 250px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
     .main-banner-content {
         p {
             color: var(--blackColor);
@@ -748,16 +756,28 @@ About Area CSS
     z-index: -2;
 }
 
-.scroll-image {
-    background-image: url(../../assets/img/map.png);
+.map-image {
+    background-image: url(../../assets/img/map.svg);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     top: -50px;
-    left: -100px;
-    width: 900px;
-    height: 600px;
+    left: -40px;
+    width: 800px;
+    height: 500px;
     z-index: -1;
+}
+
+.scroll-image {
+    background-image: url(../../assets/img/arrows.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -120px;
+    left: 35px;
+    width: 1000px;
+    height: 700px;
+    z-index: -2;
 }
 
 
@@ -4816,4 +4836,72 @@ Sidebar Eaxmple Demo CSS
         opacity: 1;
         visibility: visible;
     }
+}
+
+/*================================================
+Coupon CSS
+=================================================*/
+
+.coupon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coupon-card{
+    background: rgb(83,110,165);
+    background: linear-gradient(90deg, rgba(83,110,165,1) 0%, rgba(108,140,199,1) 50%, rgba(128,160,221,1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 40px 80px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.15);
+    position: relative;
+}
+.logo{
+    width: 80px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.coupon-card h3{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+.coupon-card p{
+    font-size: 15px;
+}
+.coupon-row{
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+    width: fit-content;
+}
+
+#cpnCode{
+    border: 1px dashed #fff;
+    padding: 10px 20px;
+    border-right: 0;
+}
+#cpnBtn{
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 20px;
+    color: #6c8cc7;
+    cursor: pointer;
+}
+.circle1, .circle2{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle1{
+    left: -25px;
+}
+.circle2{
+    right: -25px;
 }
