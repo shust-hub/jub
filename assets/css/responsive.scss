@@ -503,6 +503,11 @@ Responsive CSS
             width: 280px;
         }
     }
+
+    .circle1, .circle2{
+        position: relative;
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
