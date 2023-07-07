@@ -4356,8 +4356,6 @@ Coupon CSS
   border-radius: 15px;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
   position: relative;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .logo {
