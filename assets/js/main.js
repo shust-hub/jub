@@ -390,7 +390,12 @@ jQuery(function ($) {
 		
 		$(window).on('scroll', function(){
 			let s = $(this).scrollTop();
-			$('.scroll-image').css('transform', 'rotate('+(s / way * deg)+'deg)');
+			if ($(window).width() < 767 || $(window).height() < 767) {
+				$('.scroll-image').css('transform', 'translate(-50%, 0) rotate('+(s / way * deg)+'deg)');
+			}
+			else {
+				$('.scroll-image').css('transform', 'rotate('+(s / way * deg)+'deg)');
+			}
 		});
 
 		// Копирование промокода

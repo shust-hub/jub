@@ -626,6 +626,7 @@ About Area CSS
         padding-left: 0;
         margin-top: 20px;
         margin-bottom: 0;
+        
         li {
             list-style-type: none;
             margin-bottom: 12px;
@@ -973,7 +974,7 @@ Reviews Area CSS
                     right: auto;
                 };
                 font: {
-                    size: 18px;
+                    size: var(--fontSize);
                     weight: normal;
                     style: italic;
                 };

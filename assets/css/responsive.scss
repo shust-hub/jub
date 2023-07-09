@@ -96,6 +96,10 @@ Responsive CSS
         h3 {
             font-size: 26px;
         }
+        li {
+            font-size: 15px;
+        }
+
     }
     // .single-book-feature {
     //     h3 {
@@ -123,7 +127,7 @@ Responsive CSS
         .reviews-feedback {
             .single-feedback {
                 p {
-                    font-size: 20px;
+                    font-size: 15px;
                 }
             }
         }
@@ -598,6 +602,9 @@ Responsive CSS
         h3 {
             font-size: 36px;
         }
+        li {
+            font-size: 20px;
+        }
     }
     // .single-book-feature {
     //     h3 {
@@ -897,11 +904,11 @@ Responsive CSS
             font-size: 16px;
         }
     }
-    .single-saas-features {
-        h3 {
-            font-size: 22px;
-        }
-    }
+    // .single-saas-features {
+    //     h3 {
+    //         font-size: 22px;
+    //     }
+    // }
 }
 
 @media only screen and (min-width: 1824px) {
