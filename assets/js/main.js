@@ -402,12 +402,13 @@ jQuery(function ($) {
 		// Копирование промокода
 		var cpnBtn = document.getElementById("cpnBtn");
 		var cpnCode = document.getElementById("cpnCode");
+		var cpnInfo = document.getElementById("info");
 
-		cpnBtn.onclick = function(){
+		cpnCode.onclick = function(){
 			navigator.clipboard.writeText(cpnCode.innerHTML);
-			cpnBtn.innerHTML ="Скопировано";
+			cpnInfo.innerHTML ="Скопировано";
 			setTimeout(function(){
-				cpnBtn.innerHTML="Копировать";
+				cpnInfo.innerHTML=" ";
 			}, 3000);
 		}
 
