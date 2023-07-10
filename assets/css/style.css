@@ -471,14 +471,15 @@ About Area CSS
 =================================================*/
 .book-about-image {
   height: 100%;
-  width: 100%;
   position: relative;
   z-index: 1;
 }
-.book-about-image img {
-  width: 100%;
+.book-about-image div {
   position: sticky;
   top: 10px;
+}
+.book-about-image img {
+  width: 100%;
 }
 
 .book-about-content {
@@ -1185,4 +1186,12 @@ Coupon CSS
 
 .circle2 {
   right: -25px;
+}
+
+.slick-slide {
+  height: 0px !important;
+}
+
+.slick-slide.slick-active {
+  height: 100% !important;
 }/*# sourceMappingURL=style.css.map */

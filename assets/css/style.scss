@@ -618,14 +618,14 @@ About Area CSS
 =================================================*/
 .book-about-image {
     height: 100%;
-    width: 100%;
     position: relative;
     z-index: 1;
-
-    img {
-        width: 100%;
+    div {
         position: sticky;
         top: 10px;
+    }
+    img{
+        width: 100%;
     }
 }
 .book-about-content {
@@ -4914,3 +4914,10 @@ Coupon CSS
 .circle2{
     right: -25px;
 }
+
+.slick-slide {
+    height: 0px!important;
+   }
+   .slick-slide.slick-active {
+      height: 100% !important;  
+   }

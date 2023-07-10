@@ -183,6 +183,7 @@ jQuery(function ($) {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			cssEase: 'linear',
+			adaptiveHeight: true,
 			autoplay: false,
 			centerMode: true,
 			draggable: false,
