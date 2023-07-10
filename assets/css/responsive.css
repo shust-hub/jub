@@ -135,6 +135,14 @@ Responsive CSS
     max-width: 700px;
     margin: 0 auto;
   }
+  #cpnCode {
+    width: 100%;
+    min-width: 200px;
+  }
+  #linkBtn {
+    width: 100%;
+    min-width: 263px;
+  }
   .wowLg {
     transition-property: none !important;
     transform: none !important;

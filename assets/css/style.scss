@@ -4875,6 +4875,7 @@ Coupon CSS
     font-size: 28px;
     font-weight: 400;
     line-height: 40px;
+    margin-bottom: 20px;
 }
 .coupon-card p{
     font-size: 15px;
@@ -4882,7 +4883,7 @@ Coupon CSS
 .coupon-row{
     display: flex;
     align-items: center;
-    margin: 25px auto;
+    margin: 10px auto;
     width: fit-content;
 }
 
@@ -4894,7 +4895,8 @@ Coupon CSS
     border: 1px dashed #fff;
     padding: 10px 20px;
     border-right: 0;
-    min-width: 150px;
+    width: 100%;
+    min-width: 300px;
 }
 #cpnBtn{
     border: 1px solid #fff;
@@ -4903,6 +4905,24 @@ Coupon CSS
     color: #6c8cc7;
     cursor: pointer;
 }
+
+#linkBtn{
+    background: #fff;
+    padding: 10px 20px;
+    color: #6c8cc7;
+    width: 100%;
+    min-width: 363px;
+    border-radius: 0;
+    &:hover {
+        color: var(--whiteColor) !important;
+        span {
+            width: 225%;
+            height: 562.5px;
+        }
+    }
+
+}
+
 .circle1, .circle2{
     background: #fff;
     width: 50px;

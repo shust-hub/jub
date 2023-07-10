@@ -404,7 +404,7 @@ jQuery(function ($) {
 		var cpnCode = document.getElementById("cpnCode");
 		var cpnInfo = document.getElementById("info");
 
-		cpnCode.onclick = function(){
+		cpnBtn.onclick = function(){
 			navigator.clipboard.writeText(cpnCode.innerHTML);
 			cpnInfo.innerHTML ="Скопировано";
 			setTimeout(function(){
