@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 @File: Zebu Template Styles
 
@@ -63,6 +64,30 @@ Default CSS
   --blueColor: #6c8cc7;
   --fontSize: 21px;
   --transition: .5s;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* ширина нового скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fa; /* цвет фона у дорожки */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset; /* тень у дорожки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a79f9e; /* цвет фона у дорожки */
+  border-radius: 5px; /* скругление углов */
+}
+
+::-moz-selection {
+  background-color: #000000;
+  color: #fff;
+}
+
+::selection {
+  background-color: #000000;
+  color: #fff;
 }
 
 body {
