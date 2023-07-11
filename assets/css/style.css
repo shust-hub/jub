@@ -1157,10 +1157,6 @@ Coupon CSS
   width: fit-content;
 }
 
-#info {
-  height: 15px;
-}
-
 #cpnCode {
   border: 1px dashed #fff;
   padding: 10px 20px;
