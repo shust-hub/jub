@@ -371,12 +371,12 @@ jQuery(function ($) {
 			}, 3000);
 		}
 
-		let bg = document.querySelector('.map-image');
-		window.addEventListener('mousemove', function(e) {
-			let x = e.clientX / window.innerWidth;
-			let y = e.clientY / window.innerHeight;  
-			bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-		});
+		// let bg = document.querySelector('.map-image');
+		// window.addEventListener('mousemove', function(e) {
+		// 	let x = e.clientX / window.innerWidth;
+		// 	let y = e.clientY / window.innerHeight;  
+		// 	bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+		// });
 
 		//Показ попапа
 		var shownPopup = false;
