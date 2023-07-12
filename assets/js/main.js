@@ -348,15 +348,15 @@ jQuery(function ($) {
 		// let way = 100, // кол-во пройденных пикселей
 		// deg = 10;  // угол поворота за пройденный путь
 		
-		// $(window).on('scroll', function(){
-		// 	let s = $(this).scrollTop();
-		// 	 if ($(window).width() < 767 || $(window).height() < 767) {
-		// 	 	$('.scroll-image').css('transform', 'translate(-50%, 0) rotate('+(s / way * deg)+'deg)');
-		// 	 }
-		// 	 else {
-		// 		$('.scroll-image').css('transform', 'rotate('+(s / way * deg)+'deg)');
-		// 	}
-		// });
+		$(window).on('scroll', function(){
+			let s = $(this).scrollTop();
+			 if ($(window).width() < 767 || $(window).height() < 767) {
+			 	$('.scroll-image').css('transform', 'translate(-50%, 0) rotate('+(s / way * deg)+'deg)');
+			 }
+			 else {
+				$('.scroll-image').css('transform', 'rotate('+(s / way * deg)+'deg)');
+			}
+		});
 
 		// Копирование промокода
 		var cpnBtn = document.getElementById("cpnBtn");
@@ -371,12 +371,12 @@ jQuery(function ($) {
 			}, 3000);
 		}
 
-		// let bg = document.querySelector('.map-image');
-		// window.addEventListener('mousemove', function(e) {
-		// 	let x = e.clientX / window.innerWidth;
-		// 	let y = e.clientY / window.innerHeight;  
-		// 	bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
-		// });
+		let bg = document.querySelector('.map-image');
+		window.addEventListener('mousemove', function(e) {
+			let x = e.clientX / window.innerWidth;
+			let y = e.clientY / window.innerHeight;  
+			bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)';
+		});
 
 		//Показ попапа
 		var shownPopup = false;
