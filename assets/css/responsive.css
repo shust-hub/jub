@@ -27,11 +27,6 @@ Responsive CSS
   .section-title p {
     font-size: 15px;
   }
-  #start {
-    background: rgb(83, 110, 165);
-    background-image: none;
-    background-attachment: scroll;
-  }
   .scroll-image {
     background-repeat: no-repeat;
     background-size: contain;
@@ -278,5 +273,16 @@ Responsive CSS
   }
   .single-fun-fact p {
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #start {
+    background-image: url(../../assets/img/main-bg.svg), linear-gradient(180deg, rgb(83, 110, 165) 0%, rgb(108, 140, 199) 50%, rgb(128, 160, 221) 100%);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: -2;
   }
 }/*# sourceMappingURL=responsive.css.map */

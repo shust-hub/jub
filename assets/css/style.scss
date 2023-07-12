@@ -757,11 +757,6 @@ About Area CSS
 
 #start {
     background: rgb(83,110,165);
-    background-image:  url(../../assets/img/main-bg.svg), linear-gradient(180deg, rgba(83,110,165,1) 0%, rgba(108,140,199,1) 50%, rgba(128,160,221,1) 100%);
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     position: relative;
     overflow: hidden;
     z-index: -2;
