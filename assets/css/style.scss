@@ -438,6 +438,8 @@ Book Banner Area CSS
     position: relative;
     z-index: 1;
     height: 100vh;
+    display: flex;
+    align-items: center;
 
     .banner-image-25{
         img{
@@ -895,72 +897,82 @@ Book Feature Area CSS
 /*================================================
 Newsletter Area CSS
 =================================================*/
-// .newsletter-form-content{
-//     .newsletter-content {
-//         h2 {
-//             font-size: 45px;
-//             margin-bottom: 12px;
-//         }
-//         p {
-//             margin-bottom: 0;
-//         }
-//     }
 
-//     .newsletter-form {
-//         position: relative;
-//         margin-top: 30px;
-//         .input-newsletter {
-//             display: block;
-//             width: 100%;
-//             background-color: var(--whiteColor);
-//             border: 1px solid var(--mainColor);
-//             height: 60px;
-//             padding-left: 25px;
-//             border-radius: 5px;
-//             outline: 0;
-//             color: var(--blackColor);
+    .newsletter-content {
+        h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        p {
+            margin-bottom: 0;
+            font-size: var(--fontSize);
+        }
+    }
+
+    .newsletter-form {
+        position: relative;
+        margin-top: 30px;
+        .input-newsletter {
+            display: block;
+            width: 100%;
+            background-color: var(--whiteColor);
+            border: 1px solid var(--mainColor);
+            height: 60px;
+            padding-left: 25px;
+            border-radius: 5px;
+            outline: 0;
+            color: var(--blackColor);
     
-//             &::placeholder {
-//                 color: var(--optionalColor);
-//             }
-//         }
-//         button {
-//             position: absolute;
-//             right: 4px;
-//             top: 4px;
-//             background-color: var(--mainColor);
-//             color: var(--whiteColor);
-//             border: none;
-//             height: 52px;
-//             padding: 0 30px;
-//             border-radius: 5px;
-//             transition: var(--transition);
-//             line-height: 50px;
-//             text-transform: capitalize;
-//             cursor: pointer;
-//             font: {
-//                 size: 16px;
-//                 weight: 400;
-//             }
-//             &:hover {
-//                 background-color: var(--blackColor);
-//                 color: var(--whiteColor);
-//             }
-//         }
-//         #validator-newsletter {
-//             color: red;
-//             position: relative;
-//             top: 8px;
-//             font-size: 16px;
-//             font-weight: 500;
-//         }
-//     }  
-// }
-// .newsletter-area {
-//     &.bg-ffffff {
-//         border-bottom: 1px solid #f3f3f3;
-//     }
-// }
+            &::placeholder {
+                color: var(--optionalColor);
+            }
+        }
+        .sub-btn {
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            background-color: var(--mainColor);
+            color: var(--whiteColor);
+            border: none;
+            height: 52px;
+            padding: 0 30px;
+            border-radius: 5px;
+            transition: var(--transition);
+            line-height: 50px;
+            text-transform: capitalize;
+            width:min-content;
+            cursor: pointer;
+            font: {
+                size: 16px;
+                weight: 400;
+            }
+            &:hover {
+                background-color: var(--blackColor);
+                color: var(--whiteColor);
+            }
+        }
+        #validator-newsletter {
+            color: red;
+            position: relative;
+            top: 8px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }  
+.newsletter-area {
+    &.bg-ffffff {
+        border-bottom: 1px solid #f3f3f3;
+    }
+}
+
+.modal-header {
+    padding: 1rem 1rem 0;
+    border-bottom: none; 
+}
+.modal-body {
+    padding: 0 1rem 1rem;
+}
+
 
 /*================================================
 Reviews Area CSS
@@ -4939,7 +4951,8 @@ Coupon CSS
 
 .slick-slide {
     height: 0px!important;
-   }
-   .slick-slide.slick-active {
-      height: 100% !important;  
-   }
+}
+.slick-slide.slick-active {
+    height: 100% !important;  
+}
+

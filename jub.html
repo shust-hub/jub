@@ -20,7 +20,7 @@
         <!-- Lightbox CSS -->
         <link rel="stylesheet" href="assets/css/lightbox.min.css">
         <!-- Popup CSS -->
-        <!-- <link rel="stylesheet" href="assets/css/magnific-popup.min.css"> -->
+         <link rel="stylesheet" href="assets/css/magnific-popup.min.css"> 
         <!-- Style CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- Responsive CSS -->
@@ -37,8 +37,8 @@
     <!-- Start Book Banner Area -->
     <div id="start">
         <div id="home" class="book-banner-area">
-            <div class="d-table">
-                <div class="d-table-cell">
+            <!-- <div class="d-table">
+                <div class="d-table-cell"> -->
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6">
@@ -62,14 +62,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                <!-- </div>
+            </div> -->
         </div>
         <!-- End Book Banner Area -->
 
         <!-- Start App About Area -->
         <section id="about" class="app-about-area pb-100 pt-4">
-            <div class="container pt-100 pb-100 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="container pt-100 pb-100 wowLg wow fadeInUp" data-wow-delay="0.2s">
                 <div class="row align-items-center">
                     <div class="col-lg-5">
                         <div class="app-about-image">
@@ -600,21 +600,22 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Имя">
+                                            <input type="text" name="name" id="name" class="form-control" required data-error="Пожалуйста, введите Ваше имя" placeholder="Имя">
+                                            <input name="name" class="form-control" data-error="Пожалуйста, введите Ваше имя" placeholder="Имя">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
     
                                     <div class="col-lg-6 col-md-12">
                                         <div class="form-group">
-                                            <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Email">
+                                            <input type="email" name="email" id="email" class="form-control" required data-error="Пожалуйста, введите Ваш email" placeholder="Email">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
     
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" id="message" cols="30" rows="6" required data-error="Write your message" placeholder="Сообщение"></textarea>
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="6" required data-error="Напишите Ваше сообщение" placeholder="Сообщение"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -637,6 +638,39 @@
             </div>
         </section>
         <!-- End Contact Area -->
+
+
+  <!-- Modal -->
+  <div class="popupletter">
+    <div class="modal fade" id="subPopup" tabindex="-1" aria-labelledby="subPopupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="newsletter-form-content">
+                    <div class="newsletter-content text-center">
+                        <h2>Subscribe To Our Newsletter</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing  ipsum sLorem ipsuia dolor sit amet, consectetur adipisci velit sed quia non numquam quaerat voluptatem.uspendisse ultrices gravida.</p>
+                    </div>
+                    
+                    <form class="newsletter-form">
+                        <input type="email" class="input-newsletter" placeholder="Ваш email" required autocomplete="off">
+                        <button type="submit">
+                            Subscribe Now
+                        </button>
+                        
+                        <div id="validator-newsletter" class="form-result"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
 
         <!-- Start Users Area -->
         <section class="users-area py-5">

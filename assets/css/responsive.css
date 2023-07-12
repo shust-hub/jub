@@ -88,6 +88,18 @@ Responsive CSS
   .reviews-slides .reviews-feedback .single-feedback p {
     font-size: 15px;
   }
+  .newsletter-form-content .newsletter-content {
+    margin-top: 35px;
+  }
+  .newsletter-form-content .newsletter-content h2 {
+    font-size: 25px;
+  }
+  .newsletter-form-content .newsletter-form button {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
+  }
   .author-content {
     padding: 20px;
   }
@@ -205,6 +217,18 @@ Responsive CSS
   }
   .reviews-slides .reviews-feedback .single-feedback p {
     font-size: 20px;
+  }
+  .newsletter-form-content .newsletter-content {
+    margin-top: 35px;
+  }
+  .newsletter-form-content .newsletter-content h2 {
+    font-size: 35px;
+  }
+  .newsletter-form-content .newsletter-form button {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 15px;
   }
   .author-content {
     padding: 20px;
