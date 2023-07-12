@@ -27,6 +27,11 @@ Responsive CSS
   .section-title p {
     font-size: 15px;
   }
+  #start {
+    background: rgb(83, 110, 165);
+    background-image: none;
+    background-attachment: scroll;
+  }
   .scroll-image {
     background-repeat: no-repeat;
     background-size: contain;
