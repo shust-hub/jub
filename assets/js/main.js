@@ -83,6 +83,32 @@ jQuery(function ($) {
 				}
 			}
 		});
+
+		// Book Slider
+		$('.faq-carousel').owlCarousel({
+			items: 1,
+			loop: false,
+			nav: false,
+			dots: false
+		});
+
+		// Tabs
+
+		// Click function
+		$('.milestone-tab').hide();
+		$('.milestone-tab:first').show();
+
+
+		$('.years-nav-title').click(function(){
+			$('.years-nav-title').removeClass('active');
+			$(this).addClass('active');
+			$('.milestone-tab').hide();
+			
+			var activeTab = $(this).attr('data-nav');
+			$(activeTab).fadeIn();
+			return false;
+		});
+
 		
         // Input Plus & Minus Number JS
         // $('.input-counter').each(function() {
@@ -186,18 +212,22 @@ jQuery(function ($) {
 		// });
 		
 		// FAQ Accordion
-        // $(function() {
-        //     $('.accordion').find('.accordion-title').on('click', function(){
-        //         // Adds Active Class
-        //         $(this).toggleClass('active');
-        //         // Expand or Collapse This Panel
-        //         $(this).next().slideToggle('fast');
-        //         // Hide The Other Panels
-        //         $('.accordion-content').not($(this).next()).slideUp('fast');
-        //         // Removes Active Class From Other Titles
-        //         $('.accordion-title').not($(this)).removeClass('active');		
-        //     });
-		// });
+
+		let countSlide;
+        $(function() {
+            $('.accordion').find('.accordion-title').on('click', function(){
+                // Adds Active Class
+                $(this).toggleClass('active');
+				countSlide  = $(this).attr("data-item")-1;
+				$('.faq-carousel').trigger("to.owl.carousel", [countSlide, 1])
+                // Expand or Collapse This Panel
+                $(this).next().slideToggle('fast');
+                // Hide The Other Panels
+                $('.accordion-content').not($(this).next()).slideUp('fast');
+                // Removes Active Class From Other Titles
+                $('.accordion-title').not($(this)).removeClass('active');		
+            });
+		});
 		
 		// Tabs
         // (function ($) {

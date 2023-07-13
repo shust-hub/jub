@@ -177,6 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   opacity: 1;
   font-family: var(--optionalfontFamily);
+  line-height: 1.3;
   font-weight: 500;
   padding-left: 35px;
   padding-right: 35px;
@@ -922,11 +923,17 @@ Pricing Area CSS
 /*================================================
 Author Area CSS
 =================================================*/
-.author-area .row {
+.author-area {
   background-color: #fafafa;
+}
+.author-area .row {
+  background-color: #fff;
 }
 .author-area .row .col-lg-4 {
   padding-right: 0;
+}
+.author-area h2 span {
+  color: var(--mainColor);
 }
 
 .author-content {
@@ -1044,6 +1051,64 @@ Products Area CSS
 /*================================================
 FAQ Area CSS
 =================================================*/
+.faq-area {
+  background-color: #fafafa;
+}
+.faq-area h2 span {
+  color: var(--mainColor);
+}
+
+.faq-accordion .accordion {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.faq-accordion .accordion .accordion-item {
+  display: block;
+  background: #f3f3f3;
+  margin-bottom: 10px;
+}
+.faq-accordion .accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.faq-accordion .accordion .accordion-title {
+  padding: 15px 40px 15px 20px;
+  color: var(--blackColor);
+  position: relative;
+  display: block;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+.faq-accordion .accordion .accordion-title i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--blackColor);
+  font-size: 20px;
+  transition: var(--transition);
+}
+.faq-accordion .accordion .accordion-title.active i::before {
+  content: "\f068";
+  color: var(--mainColor);
+}
+.faq-accordion .accordion .accordion-content {
+  display: none;
+  position: relative;
+  padding: 18px 20px;
+  border-top: 1px solid var(--mainColor);
+  color: var(--optionalColor);
+}
+.faq-accordion .accordion .accordion-content.show {
+  display: block;
+}
+
+.faq-image img {
+  width: auto !important;
+  margin: auto;
+}
+
 /*================================================
 Gallery Area CSS
 =================================================*/
@@ -1123,6 +1188,23 @@ Users Area CSS
 .users-content p {
   margin-bottom: 0;
   color: var(--whiteColor);
+}
+.users-content ul {
+  margin: 15px 0 0;
+  padding: 0;
+}
+.users-content ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  color: var(--optionalColor);
+  color: var(--whiteColor);
+}
+.users-content ul li:last-child {
+  margin-bottom: 0;
+}
+.users-content ul li i {
+  color: var(--mainColor);
+  padding-right: 4px;
 }
 .users-content .users-btn {
   margin-top: 30px;
@@ -1284,4 +1366,75 @@ Coupon CSS
 
 .slick-slide.slick-active {
   height: 100% !important;
+}
+
+/*================================================
+Timeline CSS
+=================================================*/
+.timeline-area {
+  background-color: #fafafa;
+}
+
+.timeline-wrapper {
+  background-color: var(--whiteColor);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.2);
+  flex-direction: row;
+}
+
+.years-nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-wrap: nowrap;
+  padding: 15px 0;
+  width: 150px;
+  background-color: var(--mainColor);
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.years-nav-title span {
+  font-size: 21px;
+  width: 60%;
+  text-align: right;
+  padding-right: 20px;
+  color: var(--whiteColor);
+}
+.years-nav-title div {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  border: 2px solid var(--mainColor);
+}
+
+.years-nav-title.active span {
+  font-size: 28px;
+}
+.years-nav-title.active div {
+  height: 24px;
+  width: 24px;
+  background-color: var(--mainColor);
+}
+
+.milestone-tab {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.milestone-tab .milestone-img {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.milestone-tab .milestone-img img {
+  max-height: 450px;
+}
+.milestone-tab .milestone-text {
+  padding: 25px 0;
+}
+.milestone-tab .milestone-text h3 {
+  color: var(--mainColor);
+}
+.milestone-tab .milestone-text p {
+  margin-top: 35px;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
